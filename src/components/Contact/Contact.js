@@ -47,9 +47,9 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am interested in freelance opportunities - especially on ambitious
-            or large projects. However, if you have any other requests or
-            questions, don't hesitate to contact me using below form either.
+            I am interested in full-time or freelance opportunities - especially on ambitious
+            or large projects with seniors so i can learn as much as possible. However, if you 
+            have any other requests or questions, don't hesitate to contact me using below form either.
           </p>
           <div className="contact-form">
             <form ref={refForm} onSubmit={sendEmail}>

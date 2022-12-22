@@ -7,8 +7,8 @@ import './HomePage.scss'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const nameArray = "mustafa".split('')
-  const jobArray ="web developer".split('')
+  const nameArray = " Mustafa Gelisen".split('')
+  const jobArray ="Web Developer".split('')
 
   useEffect(() => {
     setTimeout(() => {
@@ -26,7 +26,6 @@ const Home = () => {
           <br />
           <span className={`${letterClass} _13`}>I</span>
           <span className={`${letterClass} _14`}>'m</span>
-          <img src={LogoTitle} alt="developer"></img>
           <AnimatedLetters
             letterClass={letterClass}
             stringArray={nameArray}
