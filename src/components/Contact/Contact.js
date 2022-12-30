@@ -3,9 +3,11 @@ import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters'
 import './Contact.scss'
 import emailjs from '@emailjs/browser'
+import AlertPopUp from '../Alert/Alert'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
+  const [isSuccessful, setIsSuccessful] = useState(false);
   const refForm = useRef()
   const ContactText = 'Contact Me'.split('')
   useEffect(() => {
@@ -26,8 +28,9 @@ const Contact = () => {
       )
       .then(
         () => {
-          alert('Message successfully sent!')
-          window.location.reload(false)
+          setIsSuccessful(true)
+          // alert('Message successfully sent!')
+          // window.location.reload(false)
         },
         () => {
           alert('Failed to send the message, please try again!')
@@ -48,8 +51,9 @@ const Contact = () => {
           </h1>
           <p>
             I am interested in full-time opportunities - especially on ambitious
-            or large projects with seniors so i can learn as much as possible. However, if you 
-            have any other requests or questions, don't hesitate to contact me using below form either.
+            or large projects with seniors so i can learn as much as possible.
+            However, if you have any other requests or questions, don't hesitate
+            to contact me using below form either.
           </p>
           <div className="contact-form">
             <form ref={refForm} onSubmit={sendEmail}>
@@ -85,9 +89,13 @@ const Contact = () => {
                 </li>
               </ul>
             </form>
+            
           </div>
+          {isSuccessful && <AlertPopUp/>} 
         </div>
+        
       </div>
+      
       <Loader type="pacman" />
     </>
   )
