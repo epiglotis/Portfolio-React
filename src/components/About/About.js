@@ -49,7 +49,7 @@ const About = () => {
         </h1>
         <a href='https://github.com/epiglotis/Portfolio-React' target="_blank">• This Project's GitHub Repository</a>
         <br></br>
-        <a href='https://github.com/epiglotis/ExpenseTracker-React' target="_blank">• GitHub Repository</a>
+        <a href='https://github.com/epiglotis/ExpenseTracker-React' target="_blank">• Expense Tracker GitHub Repository</a>
       </div>
 
       <div className='stage-cube-cont'>
