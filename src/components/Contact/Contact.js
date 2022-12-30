@@ -47,7 +47,7 @@ const Contact = () => {
             />
           </h1>
           <p>
-            I am interested in full-time or freelance opportunities - especially on ambitious
+            I am interested in full-time opportunities - especially on ambitious
             or large projects with seniors so i can learn as much as possible. However, if you 
             have any other requests or questions, don't hesitate to contact me using below form either.
           </p>

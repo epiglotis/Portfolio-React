@@ -19,7 +19,7 @@ const About = () => {
     <div className="container about-page">
       <div className="text-zone">
         <h1>
-          <AnimatedLetters letterClass={letterClass} stringArray={'About Me'.split('')} index={15} />
+          <AnimatedLetters letterClass={letterClass} stringArray={'About Me'.split('')} index={5} />
         </h1>
         <p>
           I'm a very ambitious front-end developer looking for a role in an
@@ -32,8 +32,24 @@ const About = () => {
         </p>
         <p>
           Previously worked as a Game Programmer for a year. Lately I am developing
-          web applications and accepting job offers and freelance opportunities.
+          web applications and accepting job offers.
         </p>
+        <br></br>
+        <br></br>
+        <br></br>
+        <h1>
+          <AnimatedLetters letterClass={letterClass} stringArray={'Projects'.split('')} index={10} />
+        </h1>
+        <a href='https://epiglotis.github.io/ExpenseTracker-React/' target="_blank">• Expense Tracker </a>
+        <br></br>
+        <br></br>
+        <br></br>
+        <h1>
+          <AnimatedLetters letterClass={letterClass} stringArray={'GitHub Repositories'.split('')} index={15} />
+        </h1>
+        <a href='https://github.com/epiglotis/Portfolio-React' target="_blank">• This Project's GitHub Repository</a>
+        <br></br>
+        <a href='https://github.com/epiglotis/ExpenseTracker-React' target="_blank">• GitHub Repository</a>
       </div>
 
       <div className='stage-cube-cont'>
