@@ -27,10 +27,6 @@ const About = () => {
           technologies on challenging and diverse projects.
         </p>
         <p>
-          I'm quiet confident, naturally curious, and perpetually working on
-          improving my chops one design problem at a time.
-        </p>
-        <p>
           Previously worked as a Game Programmer for a year. Lately I am developing
           web applications and accepting job offers.
         </p>
@@ -38,12 +34,19 @@ const About = () => {
         <br></br>
         <br></br>
         <h1>
+          <AnimatedLetters letterClass={letterClass} stringArray={'Freelance Projects'.split('')} index={10} />
+        </h1>
+        <a href='https://www.bugosolutions.com' target="_blank">• Etsy Seller WebApp </a>
+        <br></br>
+        <br></br>
+        
+        <h1>
           <AnimatedLetters letterClass={letterClass} stringArray={'Projects'.split('')} index={10} />
         </h1>
         <a href='https://epiglotis.github.io/ExpenseTracker-React/' target="_blank">• Expense Tracker </a>
         <br></br>
         <br></br>
-        <br></br>
+        
         <h1>
           <AnimatedLetters letterClass={letterClass} stringArray={'GitHub Repositories'.split('')} index={15} />
         </h1>
