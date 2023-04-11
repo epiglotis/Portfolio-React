@@ -7,7 +7,8 @@ import './HomePage.scss'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const nameArray = " Mustafa Gelisen".split('')
+  const firstNameArray = " Mustafa".split('')
+  const secondNameArray = " Gelisen".split('')
   const jobArray ="Web Developer".split('')
 
   useEffect(() => {
@@ -28,14 +29,19 @@ const Home = () => {
           <span className={`${letterClass} _14`}>'m</span>
           <AnimatedLetters
             letterClass={letterClass}
-            stringArray={nameArray}
+            stringArray={firstNameArray}
             index={15}
+          />
+          <AnimatedLetters
+            letterClass={letterClass}
+            stringArray={secondNameArray}
+            index={20}
           />
           <br />
           <AnimatedLetters
             letterClass={letterClass}
             stringArray={jobArray}
-            index={22}
+            index={23}
           />
         </h1>
         <h2>Frontend Developer / Javascript</h2>
