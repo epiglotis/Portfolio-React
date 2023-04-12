@@ -7,9 +7,9 @@ import './HomePage.scss'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
-  const firstNameArray = " Mustafa".split('')
-  const secondNameArray = " Gelisen".split('')
-  const jobArray ="Web Developer".split('')
+  const firstNameArray = ' Mustafa'.split('')
+  const secondNameArray = ' Gelisen'.split('')
+  const jobArray = 'Web Developer'.split('')
 
   useEffect(() => {
     setTimeout(() => {
@@ -19,38 +19,38 @@ const Home = () => {
 
   return (
     <>
-    <div className="container home-page">
-      <div className="text-zone">
-        <h1>
-          <span className={letterClass}>H</span>
-          <span className={`${letterClass} _12`}>i,</span>
-          <br />
-          <span className={`${letterClass} _13`}>I</span>
-          <span className={`${letterClass} _14`}>'m</span>
-          <AnimatedLetters
-            letterClass={letterClass}
-            stringArray={firstNameArray}
-            index={15}
-          />
-          <AnimatedLetters
-            letterClass={letterClass}
-            stringArray={secondNameArray}
-            index={20}
-          />
-          <br />
-          <AnimatedLetters
-            letterClass={letterClass}
-            stringArray={jobArray}
-            index={23}
-          />
-        </h1>
-        <h2>Frontend Developer / Javascript</h2>
-        <Link to="/contact" className="flat-button">
-          CONTACT ME
-        </Link>
+      <div className="container home-page">
+        <div className="text-zone">
+          <h1>
+            <span className={letterClass}>H</span>
+            <span className={`${letterClass} _12`}>i,</span>
+            <br />
+            <span className={`${letterClass} _13`}>I</span>
+            <span className={`${letterClass} _14`}>'m</span>
+            <AnimatedLetters
+              letterClass={letterClass}
+              stringArray={firstNameArray}
+              index={15}
+            />
+            <AnimatedLetters
+              letterClass={letterClass}
+              stringArray={secondNameArray}
+              index={20}
+            />
+            <br />
+            <AnimatedLetters
+              letterClass={letterClass}
+              stringArray={jobArray}
+              index={23}
+            />
+          </h1>
+          <h2>Frontend Developer / Javascript</h2>
+          <Link to="/contact" className="flat-button">
+            CONTACT ME
+          </Link>
+        </div>
       </div>
-    </div>
-    <Loader type='pacman'/>
+      <Loader type="pacman" />
     </>
   )
 }

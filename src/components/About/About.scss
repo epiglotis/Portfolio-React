@@ -6,7 +6,13 @@
   margin-left: 0;
   position: absolute;
   right: 0;
-  overflow: hidden;
+}
+@media only screen and (max-width: 600px) {
+  .stage-cube-cont {
+    padding-top: 50%;
+    margin-left: 16vh ;
+    position: relative;
+  }
 }
 
 .cubespinner {

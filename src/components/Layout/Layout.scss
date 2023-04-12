@@ -50,6 +50,19 @@
         display: table-cell;
         max-height: 90%;
     }
+    @media only screen and (max-width: 600px) {
+        .text-zone {
+          left: 15%;
+          width: 80%;
+          position: relative;
+          transform: none;
+          display: block;
+          top: 5%;
+          h1 {
+            font-size: 4vh;
+          }
+        }
+      }
     h1{
         font-size: 53px;
         font-family: "Coolvetica";
