@@ -30,6 +30,8 @@
   height: 90%;
   min-height: 566px;
   position: absolute;
+  display: flex;
+  flex-direction: column;
   opacity: 0;
   top: 5%;
   margin: 0 auto;
@@ -56,12 +58,12 @@
   .text-zone::-webkit-scrollbar {
     width: 1px; /* Adjust the width as needed */
   }
-  
+
   .text-zone::-webkit-scrollbar-thumb {
     background-color: #ffd700; /* Color of the thumb */
     border-radius: 10px; /* Rounded corners for the thumb */
   }
-  
+
   .text-zone::-webkit-scrollbar-track {
     background-color: #ae960a; /* Color of the track */
   }
