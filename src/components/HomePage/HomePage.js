@@ -44,7 +44,10 @@ const Home = () => {
               index={23}
             />
           </h1>
-          <h2>Frontend Developer / Javascript</h2>
+          <h2>
+            Javascript / Typescript / HTML / CSS / Express.js / Node.js
+            / Redux / MongoDB / Next.js / Sass / React
+          </h2>
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
