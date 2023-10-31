@@ -79,22 +79,13 @@ const About = () => {
           <h1>
             <AnimatedLetters
               letterClass={letterClass}
-              stringArray={'Projects'.split('')}
-              index={10}
+              stringArray={'GitHub'.split('')}
+              index={15}
             />
-          </h1>
-          <a
-            href="https://epiglotis.github.io/ExpenseTracker-React/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            • Expense Tracker{' '}
-          </a>
-
-          <h1>
+            <br/>
             <AnimatedLetters
               letterClass={letterClass}
-              stringArray={'GitHub Repositories'.split('')}
+              stringArray={'Repositories'.split('')}
               index={15}
             />
           </h1>

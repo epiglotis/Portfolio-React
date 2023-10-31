@@ -53,7 +53,7 @@ const Contact = () => {
             I am interested in full-time opportunities - especially on ambitious
             or large projects with seniors so i can learn as much as possible.
             However, if you have any other requests or questions, don't hesitate
-            to contact me using below form either.
+            to contact me using form below either.
           </p>
           <div className="contact-form">
             <form ref={refForm} onSubmit={sendEmail}>
